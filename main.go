@@ -8,6 +8,7 @@ import (
 
 func main() {
 	http.HandleFunc("/time", getTimeHandler)
+	//fmt.Println("http://localhost:8795/time")
 	err := http.ListenAndServe(":8795", nil)
 	if err != nil {
 		return
